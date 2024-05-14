@@ -2161,7 +2161,7 @@ diff -u1 -rN MCP-Reborn-vanilla/src/main/java/com/minerl/multiagent/env/EnvServe
 +        settings.disableRecorder = agentStart.isEnableRecorder() == null || !agentStart.isEnableRecorder();
 +        settings.fakeCursorSize = agentStart.getFakeCursorSize();
 +        float guiScale = agentStart.getGuiScale();
-+        settings.setSoundLevel(SoundCategory.MASTER, 0.0f);
++        settings.setSoundLevel(SoundCategory.MASTER, 1.0f);
 +
 +        MainWindow window = mc.getMainWindow();
 +        getAgentHandlers().filter(h -> h instanceof VideoProducer).forEach(h -> {
